@@ -11,23 +11,39 @@
 <div class="container-fluid wrapper m-auto">
     <div class="container-fluid my-2 bg-warning border">
         <h1 class="text-center bg-secondary text-dark  font-weight-bold p-4 " style="font-size: calc(1em + 1vw)">
-            <span class="text-light">Exploring</span>  Internationalization(I18N)
+            <span class="text-light">Exploring</span> Internationalization(I18N)
         </h1>
     </div>
-    <div class="container-fluid p-4 bg-dark text-center">
-        <a class="btn btn-outline-warning m-1" th:href="@{/welcome(language=hi)}">Hindi</a>
-        <a class="btn  btn-outline-light m-1" th:href="@{/welcome(language=fr)}">French</a>
-        <a class="btn btn-outline-danger m-1" th:href="@{/welcome(language=sp)}">Spanish</a>
-        <a class="btn btn-outline-info m-1" th:href="@{/welcome(language=ru)}">Russian</a>
-        <a class="btn btn-outline-success m-1" th:href="@{/welcome(language=jp)}">Japanese</a>
-        <a class="btn btn-outline-primary m-1" th:href="@{/welcome(language=en)}">English</a>
-        <a class="btn btn-outline-success m-1" th:href="@{/welcome(language=ta)}">Tamil</a>
-        <a class="btn btn-outline-info m-1" th:href="@{/welcome(language=te)}">Telugu</a>
-        <a class="btn btn-outline-danger m-1" th:href="@{/welcome(language=gu)}">Gujarati</a>
-        <a class="btn btn-outline-primary m-1" th:href="@{/welcome(language=ma)}">Marathi</a>
-        <a class="btn btn-outline-secondary m-1" th:href="@{/welcome(language=ori)}">Odia </a>
-        <a class="btn btn-outline-warning m-1" th:href="@{/welcome(language=bn)}">Bengali</a>
-        <a class="btn btn-outline-light m-1" th:href="@{/welcome(language=pn)}">Punjabi </a>
+
+    <div class="container p-4 bg-dark">
+        <div class="row my-2">
+            <div class="col-md-4">
+                <span class="text-warning" style="font-size: calc(1em + 1vw)">Internationalization(i18n) </span>
+            </div>
+            <div class="col-md-8">
+                <a class="btn btn-outline-warning m-1" th:href="@{/welcome(language=hi)}">Hindi</a>
+                <a class="btn btn-outline-info m-1" th:href="@{/welcome(language=ru)}">Russian</a>
+                <a class="btn btn-outline-danger m-1" th:href="@{/welcome(language=sp)}">Spanish</a>
+                <a class="btn btn-outline-success m-1" th:href="@{/welcome(language=jp)}">Japanese</a>
+                <a class="btn btn-outline-primary m-1" th:href="@{/welcome(language=en)}">English</a>
+                <a class="btn  btn-outline-light m-1" th:href="@{/welcome(language=fr)}">French</a>
+            </div>
+        </div>
+        <hr/>
+        <div class="row my-2">
+            <div class="col-md-4">
+                <span class="text-light" style="font-size: calc(1em + 1vw)">Localization(l10n) </span>
+            </div>
+            <div class="col-md-8">
+                <a class="btn btn-outline-light m-1" th:href="@{/welcome(language=ta)}">Tamil</a>
+                <a class="btn btn-outline-info m-1" th:href="@{/welcome(language=te)}">Telugu</a>
+                <a class="btn btn-outline-danger m-1" th:href="@{/welcome(language=gu)}">Gujarati</a>
+                <a class="btn btn-outline-primary m-1" th:href="@{/welcome(language=ma)}">Marathi</a>
+                <a class="btn btn-outline-secondary m-1" th:href="@{/welcome(language=ori)}">Odia </a>
+                <a class="btn btn-outline-success m-1" th:href="@{/welcome(language=pn)}">Punjabi </a>
+                <a class="btn btn-outline-warning m-1" th:href="@{/welcome(language=bn)}">Bengali</a>
+            </div>
+        </div>
     </div>
 
     <div class="container my-2 p-3 bg-secondary">
